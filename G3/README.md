@@ -1,6 +1,6 @@
-# Group [No.]
+# Group 3
 
 ## Contact
 
-- Trainer: [NAME] [MAIL]
-- Assistant: [NAME] [MAIL]
+- Trainer: Aneta Stankovska - anetastankovskaane@gmail.com
+- Co-Trainer: Ilija Mitev - ilija.mitev3@gmail.com
