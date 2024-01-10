@@ -1,6 +1,6 @@
-# Group [No.]
+# Group 5
 
 ## Contact
 
-- Trainer: [NAME] [MAIL]
-- Assistant: [NAME] [MAIL]
+- Trainer: Tanja Stojanovska stojanovskatanja@hotmail.com
+- Assistant: Ivan Ivanov ivanovv7@protonmail.com
