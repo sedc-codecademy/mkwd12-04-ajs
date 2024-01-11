@@ -54,20 +54,9 @@ const testArr = [
 - Create a button for generating titles
 - When the button is clicked generate a new `h1` element with the color, font size, and text from the inputs
 
-## Student constructor function
+## Student class
 
-- Create a class that creates Student objects with:
-  - Properties:
-    - firstName
-    - lastName
-    - birthYear
-    - academy
-    - grades - array of numbers
-  - Methods:
-    - getAge() - returns age of student
-    - getInfo() - returns "This is student firstName* lastName* from the academy academy\*!"
-    - getGradesAverage() - returns the average of the student grades
-- Create an array with 3 students
+- Cghj
 
 ## List generator from an array
 
