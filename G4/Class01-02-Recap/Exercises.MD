@@ -52,11 +52,11 @@ const testArr = [
   - FontSize
   - Text
 - Create a button for generating titles
-- When the button is clicked generate a new h1 element with the color, font size, and text from the inputs
+- When the button is clicked generate a new `h1` element with the color, font size, and text from the inputs
 
 ## Student constructor function
 
-- Create a constructor function for Student objects with:
+- Create a class that creates Student objects with:
   - Properties:
     - firstName
     - lastName
@@ -96,10 +96,10 @@ const testArr = [
   - Last Name
   - Age
   - Email
-- Create a student generator function
-- When the form is submitted, the input values should be compiled into a new object from the generator function Student
-- This student should be added to a list called "students"
-- After submitting the form the students should be printed in the console
+- Create a student generator class
+- When the form is submitted, the input values should be compiled into a new object of type Student
+- This student should be added to a list (array) called "students"
+- After submitting the form the students array should be printed in the console
 - The input fields should be cleared
 
 ## Movies renting App
