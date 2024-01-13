@@ -40,13 +40,24 @@ let movies = [
 // 5. If exists show positive result
 // 6. If it doesn't exist show negative result
 
-// Event Listeners
+// Functionality
 
-btn.addEventListener("click", function () {
+function searchMovies() {
   let value = input.value;
+  // value === null || value === undefined || value === ''
+  // if it is falsy
+  if (!value) {
+    result.innerText = "Enter movie title to search.";
+    result.style.color = "blue";
+    return;
+  }
 
   for (let movie of movies) {
-    if (value === movie) {
+    //  "Titanic" === "titanic" > false
+    //  "titanic" === "Titanic" > false
+    //  "titanic" === "titanic" > true | toLowerCase
+    //  "TITANIC" === "TITANIC" > true | toUpperCase
+    if (value.toLowerCase() === movie.toLowerCase()) {
       result.innerText = "Movie can be rented";
       result.style.color = "green";
       return;
@@ -55,4 +66,7 @@ btn.addEventListener("click", function () {
 
   result.innerText = "Movie can't be rented";
   result.style.color = "red";
-});
+}
+
+// Event Listeners
+btn.addEventListener("click", searchMovies);
