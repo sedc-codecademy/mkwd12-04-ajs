@@ -9,8 +9,11 @@
     <h1>Reminder App</h1>
     <form>
       <input type="text" placeholder="Title" id="title" />
+      <br />
       <input type="text" placeholder="Priority" id="priority" />
+      <br />
       <input type="color" id="color" />
+      <br />
       <textarea
         name="description"
         id="description"
@@ -18,12 +21,13 @@
         cols="30"
         rows="10"
       ></textarea>
+      <br />
       <button type="submit" id="submit-reminder">Add</button>
     </form>
     <div>
       <button type="button" id="show-reminders">Show reminders</button>
 
-      <table>
+      <table border="1" cellpadding="5">
         <thead>
           <th>Title</th>
           <th>Priority</th>

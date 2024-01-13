@@ -18,3 +18,68 @@
   columns
 * The row background should be the color of the "color" property
 */
+
+// Selected Elements
+let inputTitle = document.querySelector("#title");
+let inputPriority = document.querySelector("#priority");
+let inputColor = document.querySelector("#color");
+let inputDescription = document.querySelector("#description");
+let btnSubmit = document.querySelector("#submit-reminder");
+let btnShow = document.querySelector("#show-reminders");
+let tbody = document.querySelector("#tbody");
+
+// Models
+function Reminder(title, priority, color, description) {
+  this.title = title;
+  this.priority = priority;
+  this.color = color;
+  this.description = description;
+}
+
+// Data
+let reminders = [
+  {
+    title: "Wash car",
+    priority: "Medium",
+    color: "red",
+    description: "Use soap",
+  },
+  {
+    title: "Walk dog",
+    priority: "High",
+    color: "green",
+    description: "The black dog needs to be walked",
+  },
+];
+
+// Functionality
+function addReminder(event) {
+  event.preventDefault();
+
+  let title = inputTitle.value;
+  let priority = inputPriority.value;
+  let color = inputColor.value;
+  let description = inputDescription.value;
+
+  let reminder = new Reminder(title, priority, color, description);
+
+  reminders.push(reminder);
+}
+
+function showReminders() {
+  tbody.innerHTML = "";
+
+  for (let reminder of reminders) {
+    tbody.innerHTML += `
+            <tr style="background-color: ${reminder.color}">
+                <td>${reminder.title}</td>
+                <td>${reminder.priority}</td>
+                <td>${reminder.description}</td>
+            </tr>
+        `;
+  }
+}
+
+// Events
+btnSubmit.addEventListener("click", addReminder);
+btnShow.addEventListener("click", showReminders);
