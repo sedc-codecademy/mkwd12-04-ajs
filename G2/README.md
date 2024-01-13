@@ -1,6 +1,6 @@
-# Group [No.]
+# Group [G2]
 
 ## Contact
 
-- Trainer: [NAME] [MAIL]
+- Trainer: [Danilo Borozan] [daniloborozan07@gmail.com]
 - Assistant: [NAME] [MAIL]
