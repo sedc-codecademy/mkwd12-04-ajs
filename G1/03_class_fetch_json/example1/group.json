@@ -1,0 +1,23 @@
+{
+  "name": "G1",
+  "trainer": "Ivo Kostovski",
+  "assistant": "Iva Cvetkovska",
+  "academy": "Web Development",
+  "track": "JS",
+  "isActive": true,
+  "year": 2024,
+  "classroom": {
+    "title": "Palmyra",
+    "capacity": 24
+  },
+  "graduationDate": null,
+  "students": [
+    "Dejan",
+    "Simona",
+    "Dino",
+    "Nebojsha",
+    "Petar",
+    "Gligor",
+    "Ivana"
+  ]
+}
