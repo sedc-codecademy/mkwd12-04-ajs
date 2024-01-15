@@ -1,6 +1,6 @@
-# Group [No.]
+# Group [No.G8]
 
 ## Contact
 
-- Trainer: [NAME] [MAIL]
-- Assistant: [NAME] [MAIL]
+- Trainer: Aleksandra Mitkovska aleksandra.mitkovska95@hotmail.com
+- Assistant: Nikola Filkoski nikola.filkoski@gmail.com
