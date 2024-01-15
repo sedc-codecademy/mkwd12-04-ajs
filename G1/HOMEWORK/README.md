@@ -23,7 +23,7 @@ Add these additional inputs:
 - By model (input type: text input)
 - By doors (input type: number input)
 - By gasType (input type: select)
-- By color (input type: text select)
+- By color (input type: text OR select)
 - By new/old (input type: radio or checkbox) - you are free to choose the input type and the way you want to display the data (just new, just old, both, etc.)
 - By horsepower (input type: number, range input) - you are free to choose the input type and the way you want to display the data (exact value, up to value, etc.)
 
