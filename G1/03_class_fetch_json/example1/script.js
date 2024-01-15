@@ -65,6 +65,7 @@ fetch(
     return res.json();
   })
   .then(function (body) {
+    // Here goes all the logic using the returned data
     group = body;
     showInfo(group);
     console.log("BODY", body, new Date().getMilliseconds());
