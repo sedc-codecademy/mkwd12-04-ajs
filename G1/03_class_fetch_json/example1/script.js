@@ -52,15 +52,48 @@
 // null, undefined, NaN stay the same
 // Remove trailing commas (no comma on the last line) - including nested objects
 
+let groupInfo = document.getElementById("group-info");
+let studentsList = document.getElementById("students-list");
+
+let group = null;
+
 fetch(
   "https://raw.githubusercontent.com/sedc-codecademy/mkwd12-04-ajs/main/G1/03_class_fetch_json/example1/group.json"
 )
   .then(function (res) {
-    console.log("Response:", res);
+    console.log("Response:", res, new Date().getMilliseconds());
     return res.json();
   })
   .then(function (body) {
-    console.log("BODY", body);
+    group = body;
+    showInfo(group);
+    console.log("BODY", body, new Date().getMilliseconds());
+  })
+  .catch(function (error) {
+    console.log("ERROR", error);
+  })
+  .finally(function () {
+    console.log("Fetch is done");
   });
 
+function showInfo(groupData) {
+  if (!groupData) return;
+
+  groupInfo.innerText = `
+        The group ${groupData.name} has classes in the
+        classroom ${groupData.classroom.title}, which has
+        the capacity for ${groupData.classroom.capacity}
+        and the group has ${groupData.students.length}
+        students.
+    `;
+
+  for (let student of groupData.students) {
+    studentsList.innerHTML += `<li>${student}</li>`;
+  }
+}
+
+console.log("random", new Date().getMilliseconds());
+// showInfo(group); WE DON'T HAVE BODY VALUE HERE!!!
+
+//   Promise states:
 // Pending => Success | Failure
