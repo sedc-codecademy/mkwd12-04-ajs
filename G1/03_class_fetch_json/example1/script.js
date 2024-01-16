@@ -1,3 +1,4 @@
+// Normal JS object created with object literal
 // let group = {
 //   name: "G1",
 //   trainer: "Ivo Kostovski",
@@ -57,27 +58,32 @@ let studentsList = document.getElementById("students-list");
 
 let group = null;
 
+// Fetch executes asynchronously
 fetch(
   "https://raw.githubusercontent.com/sedc-codecademy/mkwd12-04-ajs/main/G1/03_class_fetch_json/example1/group.json"
 )
   .then(function (res) {
+    // This than block is always the same
     console.log("Response:", res, new Date().getMilliseconds());
     return res.json();
   })
   .then(function (body) {
-    // Here goes all the logic using the returned data
+    // Here goes all the logic using the returned data, as this is the only place where we surely know that the response has been received successfully
     group = body;
     showInfo(group);
     console.log("BODY", body, new Date().getMilliseconds());
   })
   .catch(function (error) {
+    // Here we handle cases if the API call fails
     console.log("ERROR", error);
   })
   .finally(function () {
+    // Finally executes always, it is used for cleanup operations at the end of the fetching execution
     console.log("Fetch is done");
   });
 
 function showInfo(groupData) {
+  // if we don't have group data, stop execution to prevent trying to get properties from parameter that is undefined.
   if (!groupData) return;
 
   groupInfo.innerText = `
