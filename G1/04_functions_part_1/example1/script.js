@@ -93,3 +93,124 @@ let arr = [
 
 arr[0]();
 arr[1]("Nenad");
+
+// Function declaration hoisting
+
+sayHello();
+
+function sayHello() {
+  console.log("Hello!!");
+}
+
+sayHello();
+
+// Const VS Let
+let name = "Ivo";
+name = "Ivan";
+console.log(name);
+
+const surname = "Petkovski";
+// surname = "Jordanovski"; INVALID
+console.log(surname);
+
+let arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = [1, 2, 3];
+// arr2 = ["nesto dr"]; INVALID
+arr2.push(4);
+
+console.log(arr2);
+
+// Functions as arguments
+// + OR -
+function calculator(operationFunc, num1, num2) {
+  return operationFunc(num1, num2);
+}
+
+function sum(num1, num2) {
+  return num1 + num2;
+}
+
+function difference(num1, num2) {
+  return num1 - num2;
+}
+
+console.log(calculator(sum, 1, 2)); // 3
+console.log(calculator(difference, 5, 1)); // 4
+
+// Returning a function from another function
+
+function calculator2(operation) {
+  switch (operation) {
+    case "+":
+      return function (num1, num2) {
+        return num1 + num2;
+      };
+      break;
+    case "-":
+      return function (num1, num2) {
+        return num1 - num2;
+      };
+      break;
+    default:
+      console.log("ERROR");
+      break;
+  }
+}
+
+console.log(calculator2("+")(2, 2));
+console.log(calculator2("-")(6, 2));
+
+// A function with properties and a method
+
+function greetMe(name) {
+  console.log(`Hello ${name}`);
+}
+
+greetMe("Pero");
+greetMe.defaultName = "Nikola";
+console.log(greetMe.defaultName);
+greetMe.saySomethingElse = () => console.log("HEEEEY");
+greetMe.saySomethingElse();
+
+// Higher-order functions
+
+const students = [
+  { name: "Nenad", age: 20, grade: 5 },
+  { name: "Zoran", age: 17, grade: 4 },
+  { name: "Dimitar", age: 21, grade: 2 },
+  { name: "Kole", age: 31, grade: 1 },
+  { name: "Ljupco", age: 41, grade: 4 },
+];
+
+// for (const student of students) {
+//   console.log(student.name);
+// }
+
+// forEach
+
+// students.forEach(function () {
+// })
+
+// forEach DOESN'T RETURN ANYTHING
+const result = students.forEach((student) => {
+  //   return "NESTO";
+  console.log(student.name);
+});
+
+// console.log(result); //undefined
+
+// filter
+
+const matureStudents = [];
+
+for (const student of students) {
+  if (student.age >= 18 && student.grade > 1) {
+    matureStudents.push(student);
+  }
+}
+
+console.log(matureStudents);
+
+// map
