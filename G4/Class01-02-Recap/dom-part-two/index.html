@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="../app.css" />
+  </head>
+  <body>
+    <section>
+      <h2>Title Generator</h2>
+      <div>
+        <input type="text" placeholder="Color" id="colorInput" />
+        <input
+          type="number"
+          min="1"
+          placeholder="Font Size"
+          id="fontSizeInput"
+        />
+        <input type="text" placeholder="Text" id="textInput" />
+        <button type="button" id="createBtn">CREATE!</button>
+      </div>
+      <div class="heading-container"></div>
+    </section>
+    <section>
+      <h2>List generator</h2>
+      <button id="genNameArrayBtn">Generate name array!</button>
+      <ul class="name-arr-list"></ul>
+    </section>
+    <section>
+      <h2>Dynamic list generator</h2>
+      <input placeholder="Color" type="text" id="colorListInput" />
+      <input placeholder="Font Size" type="number" id="fontSizeListInput" />
+      <input placeholder="Items" type="text" id="itemsListInput" />
+      <button id="dynamicListBtn">CREATE!</button>
+      <div class="dynamic-list-container"></div>
+    </section>
+  </body>
+</html>
