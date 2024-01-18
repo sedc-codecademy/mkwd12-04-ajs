@@ -1,4 +1,5 @@
 # Exercises
+
 ## Exercise 1
 
 Create a button
@@ -21,5 +22,3 @@ Print the person stats in a **table**:
 * Hair color
 
 **URL:** https://swapi.dev/api/people/1 \
-
-
