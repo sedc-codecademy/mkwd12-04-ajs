@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <h1>Reminder App</h1>
+    <main>
+      <section>
+        <div class="form-group">
+          <label for="titleInput">Title</label>
+          <input type="text" id="titleInput" />
+        </div>
+        <div class="form-group">
+          <label for="priorityInput">Priority</label>
+          <input type="text" id="priorityInput" />
+        </div>
+        <div class="form-group">
+          <label for="colorInput">Color</label>
+          <input type="text" id="colorInput" />
+        </div>
+        <div class="form-group">
+          <label for="descriptionInput">Description</label>
+          <textarea name="" id="descriptionInput" cols="20" rows="3"></textarea>
+        </div>
+        <div class="controls">
+          <button id="addBtn">ADD REMINDER</button>
+          <button id="showBtn">SHOW REMINDERS</button>
+        </div>
+      </section>
+      <section class="table-container"></section>
+    </main>
+  </body>
+</html>
