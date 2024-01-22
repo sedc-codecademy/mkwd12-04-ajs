@@ -129,7 +129,7 @@ const students = [
 // console.log(students);
 
 // with HOF
-const sortedStudents = students.sort((a, b) => a.age - b.age);
+// const sortedStudents = students.sort((a, b) => a.age - b.age);
 
 // Ascending
 // a.age - b.age
@@ -150,9 +150,55 @@ const sortedStudents = students.sort((a, b) => a.age - b.age);
 //   return 0;
 // }
 
-console.log(sortedStudents);
-console.log(students);
+// console.log(sortedStudents);
+// console.log(students);
+
+// Pass by value VS Pass by reference
+
+// Pass by value - all simple value types
+// let name = "Ivo";
+// let otherName = name;
+// otherName = "Iva";
+
+// Pass by reference - Arrays and Objects
+// let dogs = ['murdzo', 'sharko'];
+// let otherDogs = dogs;
+// otherDogs.sort()
+
+// How to copy an array
+// case 1: Use slice
+// let copyOfStudents1 = students.slice();
+
+// case 2: use for loop
+// let copyOfStudents2 = [];
+// for (const student of students) {
+//   copyOfStudents2.push(student);
+// }
+
+// case 3: Spreading
+// let copyOfStudents3 = [...students];
+
+// const sortedStudents = copyOfStudents3.sort((a, b) => a.age - b.age);
+
+// const sortedStudents = [...students].sort((a, b) => a.age - b.age);
+
+// console.log(students);
+// console.log(sortedStudents);
 
 // includes
+// const numbers3 = [1, 2, 3];
+
+// const hasNumberTwo = numbers3.includes(2);
+// const hasNumberFour = numbers3.includes(4);
+
+// console.log(hasNumberTwo);
+// console.log(hasNumberFour);
 
 // indexOf
+// const numbers3 = [1, 2, 3];
+
+// const hasNumberTwo = numbers3.indexOf(2);
+// const hasNumberFour = numbers3.indexOf(4);
+
+// console.log(hasNumberTwo >= 0);
+// console.log(hasNumberFour >= 0);
