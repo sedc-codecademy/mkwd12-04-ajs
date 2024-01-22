@@ -107,8 +107,8 @@ dist
 .DS_Store
 
 #IDE
-.idea/*
-.vscode/*
+.idea/
+.vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
