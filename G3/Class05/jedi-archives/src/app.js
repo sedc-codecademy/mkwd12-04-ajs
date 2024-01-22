@@ -11,7 +11,9 @@
 
 
 // 3) FUNCTION DEFINITIONS
-// Function for retriving and rendering data from API (OPTIONAL)
+
+// Function for retriving and rendering data from API (*OPTIONAL*)
+// More advanced concept that will be discussed more thoroughly in the following lectures
 function renderDataFromApi(url, renderFunction) {
     fetch(url)
         .then(response => response.json())
