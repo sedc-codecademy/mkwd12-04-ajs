@@ -14,9 +14,12 @@
 // Function for retriving and rendering data from API (OPTIONAL)
 function renderDataFromApi(url, renderFunction) {
     fetch(url)
-        .then((response) => response.json())
-        .then((result) => {
+        .then(response => response.json())
+        .then(result => {
             renderFunction(result);
+        })
+        .catch(error => {
+            console.error(error);
         })
 }
 
