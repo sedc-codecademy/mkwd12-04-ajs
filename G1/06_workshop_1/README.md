@@ -27,3 +27,18 @@ Add three buttons on top of the list with the following functionality:
 - Button 1: Get all countries in Europe
 - Button 2: Get all countries that are neighbors of Macedonia
 - Button 3: Get Macedonia
+
+### Workshop flow
+
+1. You get the requirements
+2. Think about the solution
+3. Code the solution
+4. Create a new repository on GitHub
+5. Place the code in the repository
+6. Send the link to:
+
+- ivo.kostovski@gmail.com
+- ivacvetkovska.sedc@gmail.com
+
+7. Deadline for submition: end of class (20:45)
+8. Feedback will be given in 10 days maximum
