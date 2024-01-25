@@ -1,4 +1,4 @@
-// Selected Elements
+// === Selected Elements ===
 // Here we combine all selected elements in an html object to organize the code
 const html = {
 	cardContainer: document.querySelector('#cardContainer'),
@@ -12,7 +12,8 @@ const html = {
 	resetBtn: document.querySelector('#resetBtn'),
 };
 
-// Functions
+// === Functions  ===
+// Get countries from the API, returns a Promise of the array of countries
 function getCountries() {
 	return fetch('https://restcountries.com/v3.1/all').then(response =>
 		response.json()
@@ -39,16 +40,10 @@ function createCard(country) {
             />
             <div class="info-body">
                 <h5 class="info-title">${country.name.common}</h5>
-                <p class="info-text">${
-									country.name.common
-								} is a country with population of ${
-		country.population
-	} and capital city is ${country.capital?.[0] || 'unknown'}.</p>
+                <p class="info-text">${country.name.common} is a country with population of ${country.population} and capital city is ${country.capital?.[0] || 'unknown'}.</p>
             </div>
             <div class="info-footer">
-                <small class="text-muted">Open on <a href="https://en.wikipedia.org/wiki/${prepareWikiSearchName(
-									country.name.common
-								)}" target="_blank" />Wikipedia</a></small>
+                <small class="text-muted">Open on <a href="https://en.wikipedia.org/wiki/${prepareWikiSearchName(country.name.common)}" target="_blank" />Wikipedia</a></small>
             </div>
         </div>
     </div>`;
@@ -60,25 +55,33 @@ function prepareWikiSearchName(name) {
 }
 
 function toggleSpinner(showSpinner) {
+	// this function shows or hides the spinner
 	if (showSpinner) {
+		// if showSpinner is true, show the spinner
 		html.spinner.style.display = 'block';
 	} else {
+		// else hide the spinner
 		html.spinner.style.display = 'none';
 	}
 }
 
 // Events
 html.searchBtn.addEventListener('click', () => {
+	// when the search button is clicked, we show the spinner
 	toggleSpinner(true);
+	// when the search button is clicked, we get the value from the input field
 	const value = html.searchInput.value;
 
+	// if the value is empty or undefined, we show a notification and return
 	if (!value) {
 		html.notification.innerHTML = `<div class="alert-danger">You have entered an invalid value or value is empty!</div>`;
 		return;
 	}
+	// if the value is not empty, we clear the notification and the card container
 	html.cardContainer.innerHTML = '';
 	html.notification.innerHTML = '';
 
+	// we fetch the countries from the API and show them
 	fetch(`https://restcountries.com/v3.1/name/${value}`)
 		.then(response => response.json())
 		.then(countries => showCountries(countries))
@@ -86,62 +89,81 @@ html.searchBtn.addEventListener('click', () => {
 });
 
 btnEurope.addEventListener('click', () => {
+	// when the Europe button is clicked, we show the spinner
 	toggleSpinner(true);
+	// when the Europe button is clicked, we clear the card container
 	html.cardContainer.innerHTML = '';
 
+	// we fetch the countries from the API and show them
 	getCountries()
 		.then(countries => {
+			// we filter the countries by region
 			const countriesFromEurope = countries.filter(
 				country => country.region === 'Europe'
 			);
 
+			// we show the countries
 			showCountries(countriesFromEurope);
 		})
 		.finally(() => toggleSpinner(false));
 });
 
 btnNeighbors.addEventListener('click', () => {
+	// when the Neighbors button is clicked, we show the spinner
 	toggleSpinner(true);
+	// when the Neighbors button is clicked, we clear the card container
 	html.cardContainer.innerHTML = '';
 
+	// we fetch the countries from the API and show them
 	getCountries()
 		.then(countries => {
+			// we filter the countries by region
 			const countriesNeighbors = countries.filter(country =>
 				country.borders?.includes('MKD')
 			);
 
+			// we show the countries
 			showCountries(countriesNeighbors);
 		})
 		.finally(() => toggleSpinner(false));
 });
 
 btnMacedonia.addEventListener('click', () => {
+	// when the Macedonia button is clicked, we show the spinner
 	toggleSpinner(true);
+	// when the Macedonia button is clicked, we clear the card container
 	html.cardContainer.innerHTML = '';
 
+	// we fetch the countries from the API and show them
 	getCountries()
 		.then(countries => {
 			const macedonia = countries.find(
 				country => country.name.common === 'North Macedonia'
 			);
 
+			// we show the countries
 			showCountries([macedonia]);
 		})
 		.finally(() => toggleSpinner(false));
 });
 
 resetBtn.addEventListener('click', () => {
+	// when the Reset button is clicked, we clear the card container, the notification and the input field
 	html.notification.innerHTML = '';
 	html.searchInput.value = '';
 	html.cardContainer.innerHTML = '';
+
+	// when the Reset button is clicked, we show the spinner
 	toggleSpinner(true);
 
+	// we fetch the countries from the API and show them
 	getCountries()
 		.then(countries => showCountries(countries))
 		.finally(() => toggleSpinner(false));
 });
 
 // Init
+// on page load, we show fetch the countries from the API and show them
 getCountries()
 	.then(countries => showCountries(countries))
 	.finally(() => toggleSpinner(false));
@@ -160,5 +182,3 @@ getCountries()
 // country.capital?.[0] || 'unknown';
 
 // Read more - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
-
-[{ borders: ['ITA'] }, { borders: [] }, {}];
