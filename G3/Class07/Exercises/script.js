@@ -43,3 +43,8 @@ fetch("https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Sampl
 
 
     })
+
+// In case of CORS problem or any similar
+fetch("students.json")
+    .then(response => response.json())
+    .then(result => console.log(result))
