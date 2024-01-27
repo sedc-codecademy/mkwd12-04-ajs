@@ -22,7 +22,7 @@ Use higher order functions to find the answers
 
 There is a JSON with products. Make a call and get the following data from it:
 
-* All laptops in stock ordered by price descending
+* All laptops, ordered by price descending
 * The first grocery item
 * Index of the first "Samsung" smartphone
 * Check if there is any item from the brand "Sony"
