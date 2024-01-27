@@ -7,7 +7,7 @@ const users = [
     {id: 5, name: 'David', age: 42, occupation: 'Product Manager'},
 ];
 
-const students = ['Sasho', 'Boris', 'Slavko', 'Sirma', 'Marija', 'Vladimir'];
+const students = ['Marija', 'Sasho', 'Boris', 'Slavko', 'Sirma', 'Marija', 'Vladimir'];
 
 // *** map ***
 // - executes a provided function once for each array element
@@ -56,15 +56,15 @@ console.log(olderUsers);
 const sum = numbers.reduce((acc, curr) => acc + curr, 0);
 console.log(sum);
 const multiplyResult = numbers.reduce((acc, curr) => acc * curr, 1);
-console.log(multiplyResult);
+// console.log(multiplyResult);
 
 // const positiveNums = numbers.filter(num => num > 0);
 // const sumOfPostiveNums = positiveNums.reduce((acc, curr) => acc + curr, 0);
 const sumOfPostiveNums = numbers.filter(num => num > 0).reduce((acc, curr) => acc + curr, 0);
-console.log(sumOfPostiveNums);
+// console.log(sumOfPostiveNums);
 
 const averageAge = users.reduce((acc, user) => acc + user.age, 0) / users.length;
-console.log(averageAge);
+// console.log(averageAge);
 
 
 // *** sort ***
@@ -72,20 +72,20 @@ console.log(averageAge);
 const numbersToSort = [2, 5, -5, 8, 10, -15, 7, 3, -12, 17, -34, 53, 120, 70, -10, 35];
 numbersToSort.sort((a, b) => a - b); // ascending
 numbersToSort.sort((a, b) => b - a); // descending
-console.log(numbersToSort);
+// console.log(numbersToSort);
 
-students.sort((a, b) => a.localeCompare(b, 'en')); // ascending
-students.sort((a, b) => b.localeCompare(a, 'en')); // descending
-console.log(students);
+// students.sort((a, b) => a.localeCompare(b, 'en')); // ascending
+// students.sort((a, b) => b.localeCompare(a, 'en')); // descending
+// console.log(students);
 
 // *** includes ***
 // - determines whether an array includes a certain value among its entries
 // - returns true if the array includes that specific value, otherwise it returns false
 // - does not modify the original array
 const studentsIncludeIvan = students.includes('Ivan');
-console.log(studentsIncludeIvan);
+// console.log(studentsIncludeIvan);
 const studentsIncludeSasho = students.includes('Sasho');
-console.log(studentsIncludeSasho);
+// console.log(studentsIncludeSasho);
 
 
 // *** find ***
@@ -93,7 +93,49 @@ console.log(studentsIncludeSasho);
 // - if no elements satisfy the testing function, undefined is returned
 // - does not modify the original array
 const foundUser = users.find(user => user.age === 42);
-console.log(foundUser);
+// console.log(foundUser);
 
 const foundStudent = students.find(student => student === 'Sirma');
-console.log(foundStudent);
+// console.log(foundStudent);
+
+// *** reverse ***
+// directly modifies the original array
+const originalArrayReverse = [1, 2, 3, 4, 5];
+console.log(originalArrayReverse);
+// originalArrayReverse.reverse();
+// console.log(originalArrayReverse);
+
+// let newArr = originalArrayReverse; // on't make a new copy
+// newArr.reverse();
+// console.log('originalArrayReverse:', originalArrayReverse);
+// console.log('newArr:', newArr);
+
+let newArr = originalArrayReverse.slice();
+let newArr2 = [...originalArrayReverse];
+newArr.reverse();
+console.log(newArr);
+
+// using reerse ith string
+const originalString = 'Hello, world';
+const reversedString = originalString.split('').reverse().join('');
+console.log(reversedString);
+
+// *** indexOf ***
+// - returns the first index at which a given element can be found in the array
+// - if no elements satisfy the testing function, -1 is returned
+// - does not modify the original array
+const indexOfStudent = students.indexOf('Marija');
+console.log(indexOfStudent);
+
+// not allowed
+// const indexOfUser = users.indexOf(user => user.age === 28);
+// console.log(indexOfUser);
+
+
+// *** findIndex ***
+// - accepts callback function as an arguement
+// - returns the index of the first element in an array that satisfies the provided testing function
+// - if no elements satisfy the testing function, -1 is returned
+// - does not modify the original array
+const indexOfUser = users.findIndex(user => user.name.toLowerCase() === 'jane');
+console.log(indexOfUser);
