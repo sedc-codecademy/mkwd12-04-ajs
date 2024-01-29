@@ -45,11 +45,12 @@ console.log("============== Asynchronious executing ==============");
 
 // *setTimeout*
 // => executes a function (first argument) when a given time passes (second argument)
-debugger;
+// debugger;
 console.log("First");
-setTimeout(() => {
-    console.log("This is printed after 3 seconds");
-}, 3000);
+// setTimeout(() => {
+//     // executed asynchronously
+//     console.log("This is printed after 3 seconds");
+// }, 3000); // 3000ms === 3s
 console.log("Second");
 
 // *setInterval*
@@ -57,3 +58,30 @@ console.log("Second");
 // setInterval(() => {
 //     console.log("This is printed every 2 seconds");
 // }, 2000)
+
+console.clear();
+function greet(name) {
+    setTimeout(() => {
+        console.log(`Hello ${name}`);
+    }, 2500);
+}
+// greet("Slave");
+// console.log("This is printed first");
+
+// Syncronous vs Asyncronous
+// Syncronous
+console.log(1);
+console.log(2);
+console.log(3);
+// Result:
+// 1
+// 2
+// 3
+
+setTimeout(() => console.log(4), 2000);
+console.log(5);
+setTimeout(() => console.log(6), 1000);
+// Result
+// 5
+// 6
+// 4
