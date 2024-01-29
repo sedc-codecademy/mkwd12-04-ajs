@@ -1,6 +1,7 @@
 console.log("===================== Callback Functions =====================");
-// Common use-cases:
+// => function that is passed as an argument to another function and is expected to be executed after some async operation is completed
 
+// Common use-cases:
 // 1) Async Operations
 function performAsyncOperation(callback) {
     console.log("Async operation started...");
