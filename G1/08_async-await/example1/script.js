@@ -55,7 +55,6 @@ function getImportantDocuments(documents) {
 // 	.catch(err => console.log(err));
 
 // Async - Await
-
 async function handleDocuments() {
 	try {
 		const response = await getDocuments();
