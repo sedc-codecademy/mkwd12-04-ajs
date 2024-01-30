@@ -1,0 +1,222 @@
+[
+	{
+		"id": 1,
+		"name": "The Dark Knight",
+		"actors": ["Christian Bale", "Heath Ledger"],
+		"producer": "Christopher Nolan",
+		"dateOfRelease": "2008-07-18",
+		"minAge": 13,
+		"budget": 185000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 2,
+		"name": "Inception",
+		"actors": ["Leonardo DiCaprio", "Ellen Page"],
+		"producer": "Christopher Nolan",
+		"dateOfRelease": "2010-07-16",
+		"minAge": 13,
+		"budget": 160000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 3,
+		"name": "Interstellar",
+		"actors": ["Matthew McConaughey", "Anne Hathaway"],
+		"producer": "Christopher Nolan",
+		"dateOfRelease": "2014-11-07",
+		"minAge": 13,
+		"budget": 165000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 4,
+		"name": "The Prestige",
+		"actors": ["Christian Bale", "Hugh Jackman"],
+		"producer": "Christopher Nolan",
+		"dateOfRelease": "2006-10-20",
+		"minAge": 13,
+		"budget": 40000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": false
+	},
+	{
+		"id": 5,
+		"name": "Memento",
+		"actors": ["Guy Pearce", "Carrie-Anne Moss"],
+		"producer": "Christopher Nolan",
+		"dateOfRelease": "2001-03-16",
+		"minAge": 17,
+		"budget": 9000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": false
+	},
+	{
+		"id": 6,
+		"name": "Dunkirk",
+		"actors": ["Fionn Whitehead", "Tom Hardy"],
+		"producer": "Christopher Nolan",
+		"dateOfRelease": "2017-07-21",
+		"minAge": 13,
+		"budget": 100000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": false
+	},
+	{
+		"id": 7,
+		"name": "Titanic",
+		"actors": ["Leonardo DiCaprio", "Kate Winslet"],
+		"producer": "James Cameron",
+		"dateOfRelease": "1997-12-19",
+		"minAge": 13,
+		"budget": 200000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 8,
+		"name": "The Godfather",
+		"actors": ["Marlon Brando", "Al Pacino"],
+		"producer": "Francis Ford Coppola",
+		"dateOfRelease": "1972-03-24",
+		"minAge": 17,
+		"budget": 6000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 9,
+		"name": "Pulp Fiction",
+		"actors": ["John Travolta", "Uma Thurman"],
+		"producer": "Quentin Tarantino",
+		"dateOfRelease": "1994-10-14",
+		"minAge": 18,
+		"budget": 8000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 10,
+		"name": "The Shawshank Redemption",
+		"actors": ["Tim Robbins", "Morgan Freeman"],
+		"producer": "Frank Darabont",
+		"dateOfRelease": "1994-09-22",
+		"minAge": 17,
+		"budget": 25000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": false
+	},
+	{
+		"id": 11,
+		"name": "The Lord of the Rings: The Return of the King",
+		"actors": ["Elijah Wood", "Viggo Mortensen"],
+		"producer": "Peter Jackson",
+		"dateOfRelease": "2003-12-17",
+		"minAge": 13,
+		"budget": 94000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 12,
+		"name": "The Matrix",
+		"actors": ["Keanu Reeves", "Laurence Fishburne"],
+		"producer": "The Wachowski Brothers",
+		"dateOfRelease": "1999-03-31",
+		"minAge": 17,
+		"budget": 63000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 13,
+		"name": "Fight Club",
+		"actors": ["Brad Pitt", "Edward Norton"],
+		"producer": "David Fincher",
+		"dateOfRelease": "1999-10-15",
+		"minAge": 18,
+		"budget": 63000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": false
+	},
+	{
+		"id": 14,
+		"name": "Forrest Gump",
+		"actors": ["Tom Hanks", "Robin Wright"],
+		"producer": "Robert Zemeckis",
+		"dateOfRelease": "1994-07-06",
+		"minAge": 13,
+		"budget": 55000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 15,
+		"name": "Gladiator",
+		"actors": ["Russell Crowe", "Joaquin Phoenix"],
+		"producer": "Ridley Scott",
+		"dateOfRelease": "2000-05-05",
+		"minAge": 17,
+		"budget": 103000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 16,
+		"name": "The Silence of the Lambs",
+		"actors": ["Jodie Foster", "Anthony Hopkins"],
+		"producer": "Jonathan Demme",
+		"dateOfRelease": "1991-02-14",
+		"minAge": 18,
+		"budget": 19000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 17,
+		"name": "Schindler's List",
+		"actors": ["Liam Neeson", "Ralph Fiennes"],
+		"producer": "Steven Spielberg",
+		"dateOfRelease": "1993-12-15",
+		"minAge": 17,
+		"budget": 22000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 18,
+		"name": "Inglourious Basterds",
+		"actors": ["Brad Pitt", "Christoph Waltz"],
+		"producer": "Quentin Tarantino",
+		"dateOfRelease": "2009-08-21",
+		"minAge": 18,
+		"budget": 70000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": false
+	},
+	{
+		"id": 19,
+		"name": "The Departed",
+		"actors": ["Leonardo DiCaprio", "Matt Damon"],
+		"producer": "Martin Scorsese",
+		"dateOfRelease": "2006-10-06",
+		"minAge": 17,
+		"budget": 90000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	},
+	{
+		"id": 20,
+		"name": "The Pianist",
+		"actors": ["Adrien Brody", "Thomas Kretschmann"],
+		"producer": "Roman Polanski",
+		"dateOfRelease": "2002-09-25",
+		"minAge": 15,
+		"budget": 35000000,
+		"isInMovieTheaters": false,
+		"hasWonOscar": true
+	}
+]
