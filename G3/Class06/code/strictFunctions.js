@@ -8,9 +8,9 @@
 // console.log(x);
 
 // Duplicate parameter
-// function example(a, b, a) { // This will throw an error
-//     console.log(a);
-// }
+function example(a, b, a) { // This will throw an error
+    console.log(a);
+}
 
 // Trying to assign a value to an undeclared variable
 // undeclaredVariable = 42; // This will throw an error
