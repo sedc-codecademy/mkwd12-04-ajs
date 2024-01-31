@@ -48,6 +48,8 @@ The web page should be:
 10. The person clicks on the previous button
 11. Impiety the view changes to a new table with the first ships and the previous button disappears
 
+[![alt text](./assets/jedi-app-flow.png 'Jedi App ')](./assets/jedi-app-flow.png)
+
 ### Workshop flow
 
 1. You get the requirements
