@@ -21,7 +21,7 @@ The web page should be:
     - Name
     - Height
     - Mass
-    - Gender
+    - Gender (show N/A if empty)
     - Birth Year
     - Appearances (Count of movies they appeared in)
   - Ship
@@ -47,3 +47,15 @@ The web page should be:
 9. Immediately the view changes to a new table with new ships and a previous button appears
 10. The person clicks on the previous button
 11. Impiety the view changes to a new table with the first ships and the previous button disappears
+
+### Workshop flow
+
+1. You get the requirements
+2. Think about the solution
+3. Code the solution
+4. Create a new repository on GitHub
+5. Place the code in the repository
+6. Send the link to:
+
+- ivo.kostovski@gmail.com
+- ivacvetkovska.sedc@gmail.com
