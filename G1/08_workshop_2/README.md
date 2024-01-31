@@ -21,7 +21,7 @@ The web page should be:
     - Name
     - Height
     - Mass
-    - Gender
+    - Gender (show N/A if empty)
     - Birth Year
     - Appearances (Count of movies they appeared in)
   - Ship
