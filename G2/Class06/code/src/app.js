@@ -100,4 +100,24 @@ copyArray.sort((x,y)=> y.averageGrade - x.averageGrade); //DESC
 console.log(copyArray);
 console.log(students);
 
+// copyArray.sort((x,y)=> x.firstName.localeCompare(y.firstName));//ASC
+// console.log('Sort ASC string:')
+// console.log(copyArray);
 
+copyArray.sort((x,y)=> y.firstName.localeCompare(x.firstName));//DESC
+console.log('Sort DESC string:');
+console.log(copyArray);
+
+let string = '30-01-2024'
+console.log(string);
+let replaceString = string.replaceAll('-','/');
+console.log(replaceString);
+
+let includeString = 'student';
+let test = includeString[0].includes('s');
+console.log(test);
+
+
+let startWithString = 'Murat';//murat
+let testString = startWithString.toLowerCase().startsWith('m');
+console.log(testString);
