@@ -61,3 +61,12 @@ The web page should be:
 
 - ivo.kostovski@gmail.com
 - ivacvetkovska.sedc@gmail.com
+
+### Results
+
+Total students: 21
+Attended class: 14
+Sent: 6
+
+Amazing: 4
+Good: 2
