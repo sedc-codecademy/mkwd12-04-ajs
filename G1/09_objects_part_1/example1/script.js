@@ -127,23 +127,23 @@
 // console.log('p3', person3);
 
 // === Object Create ===
-let car1 = {
-	model: 'Tesla',
-	gas: 'Electric',
-	noOfBatteries: 4,
-};
+// let car1 = {
+// 	model: 'Tesla',
+// 	gas: 'Electric',
+// 	noOfBatteries: 4,
+// };
 // let car = Object.create(null);
-let car2 = Object.create(car1);
+// let car2 = Object.create(car1);
 
-car2.model = 'Golf';
-car2.gas = 'Diesel';
-car2.noOfSeats = 5;
+// car2.model = 'Golf';
+// car2.gas = 'Diesel';
+// car2.noOfSeats = 5;
 
 // console.log('car1', car1);
 // console.log('car2', car2);
 
 // === Object Assign ===
-let car3 = Object.assign(car1, car2);
+// let car3 = Object.assign(car1, car2);
 
 // car3.noOfBatteries = 0;
 
@@ -175,27 +175,127 @@ let car3 = Object.assign(car1, car2);
 // console.log(fromEntries);
 
 // === Object Seal ===
-let cat = {
-	name: 'Garfield',
-	age: 3,
-};
+// let cat = {
+// 	name: 'Garfield',
+// 	age: 3,
+// };
 
-console.log(cat);
-Object.seal(cat);
-cat.age = 4;
-cat.hasOwner = true;
-delete cat.age;
-console.log(cat);
+// console.log(cat);
+// Object.seal(cat);
+// cat.age = 4;
+// cat.hasOwner = true;
+// delete cat.age;
+// console.log(cat);
 
 // === Object Freeze ===
-let cat2 = {
-	name: 'Thomas',
-	age: 2,
+// let cat2 = {
+// 	name: 'Thomas',
+// 	age: 2,
+// };
+
+// console.log(cat2);
+// Object.freeze(cat2);
+// cat2.age = 3;
+// cat2.hasOwner = false;
+// delete cat2.age;
+// console.log(cat2);
+
+// Exercise
+// Create an object named user with properties username,
+// email, password, and profile(which should be another
+// object with properties firstName, lastName, age, and
+// hobbies(an array)).
+
+let mark = {
+	username: 'mark_123',
+	email: 'mark@gmail.com',
+	password: 'Lozinka1',
+	profile: {
+		firstName: 'Mark',
+		lastName: 'Johnson',
+		age: 30,
+		hobbies: ['coding', 'reading', 'hiking'],
+	},
 };
 
-console.log(cat2);
-Object.freeze(cat2);
-cat2.age = 3;
-cat2.hasOwner = false;
-delete cat2.age;
-console.log(cat2);
+// Add methods to the user object:
+// - getFullName: This should return the user's full name.
+
+const getFullName = function () {
+	return `${this.profile.firstName} ${this.profile.lastName}`;
+};
+mark.getFullName = getFullName;
+// console.log(mark.getFullName());
+
+// - getHobbies: This should return a string of the user's
+// hobbies separated by commas.
+
+const getHobbies = function () {
+	return `This user has the following hobbies: ${this.profile.hobbies.join(
+		', '
+	)}.`;
+};
+mark.getHobbies = getHobbies;
+// console.log(mark.getHobbies());
+
+// - login: this should accept username and password and
+// return boolean value if logged in successfully
+
+mark.login = function (username, password) {
+	if (this.username === username && this.password === password) {
+		console.log(`Welcome ${this.username}`);
+		return true;
+	} else {
+		console.log('Invalid username or password');
+		return false;
+	}
+};
+
+// mark.login('ivo', '123');
+// mark.login('mark_123', 'Lozinka1');
+
+// - changePassword: This should accept a new password as a
+// parameter and change the user's password to the new one.
+
+mark.changePassword = function (newPassword) {
+	this.password = newPassword;
+};
+mark.changePassword('123456');
+// console.log(mark);
+
+// Create a new user named user2 and copy all properties
+// from user. Change the username, email, and password
+// properties of user2, and user2 with have an empty profile.
+
+let mike = {
+	...mark,
+	username: 'mike123',
+	password: 'Lozinka2',
+	email: 'mike@yahoo.com',
+	profile: {
+		...mark.profile,
+		firstName: 'Mike',
+		hobbies: [...mark.profile.hobbies],
+	},
+};
+
+// console.log(mike);
+// Add a new hobby to mike hobbies array.
+
+// mike.profile.hobbies.push('dancing');
+// mark.profile.hobbies.push('snorkeling');
+
+// console.log(mark);
+// console.log(mike);
+
+// Create a function displayUser that accepts a user object
+// and displays the user's full name, email, and hobbies.
+
+// function displayUserInfo({ email, profile: { firstName, lastName, hobbies } }) {
+// 	console.log('Full Name', firstName, lastName);
+// 	console.log('Email', email);
+// 	console.log('Hobbies', hobbies.join(', '));
+// }
+
+// displayUserInfo(mark);
+// displayUserInfo(mike);
