@@ -11,28 +11,28 @@ for. A small step for the internet, but a huge step for Star Wars fans.
 
 The web page should be:
 
-- Single page application
-- There should be only one page
-- The logo should show at the front of the page
-- On the page there should be an image of **person** and **space-ship** that get data for the corresponding image and
+* Single page application
+* There should be only one page
+* The logo should show at the front of the page
+* On the page there should be an image of **person** and **space-ship** that get data for the corresponding image and
   display a table
-- Tables:
-  - Person
-    - Name
-    - Height
-    - Mass
-    - Gender (show N/A if empty)
-    - Birth Year
-    - Appearances (Count of movies they appeared in)
-  - Ship
-    - Name
-    - Model
-    - Manufacturer
-    - Cost
-    - People Capacity (Max people on board)
-    - Class
-- There should be 10 records per page of a table
-- There should be next/previous buttons to change the pages
+* Tables:
+    * Person
+        * Name
+        * Height
+        * Mass
+        * Gender
+        * Birth Year
+        * Appearances ( Count of movies they appeared in )
+    * Ship
+        * Name
+        * Model
+        * Manufacturer
+        * Cost
+        * People Capacity ( Max people on board )
+        * Class
+* There should be 10 records per page of a table
+* There should be next/previous buttons to change the pages
 
 ## Flow 🌈
 
@@ -47,26 +47,3 @@ The web page should be:
 9. Immediately the view changes to a new table with new ships and a previous button appears
 10. The person clicks on the previous button
 11. Impiety the view changes to a new table with the first ships and the previous button disappears
-
-[![alt text](./assets/jedi-app-flow.png 'Jedi App ')](./assets/jedi-app-flow.png)
-
-### Workshop flow
-
-1. You get the requirements
-2. Think about the solution
-3. Code the solution
-4. Create a new repository on GitHub
-5. Place the code in the repository
-6. Send the link to:
-
-- ivo.kostovski@gmail.com
-- ivacvetkovska.sedc@gmail.com
-
-### Results
-
-Total students: 21
-Attended class: 14
-Sent: 6
-
-Amazing: 4
-Good: 2
