@@ -49,7 +49,7 @@ const renderNextPrevBtns = (element, data, callback) => {
       callback(data.previous);
     });
   }
-
+  ``;
   if (data.next) {
     //Add a next button here
     const nextBtn = document.createElement("BUTTON");

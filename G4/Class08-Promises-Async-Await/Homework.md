@@ -9,6 +9,7 @@ After you have the data display the following informations in the HTML
 - ONLY USE HIGHER ORDER FUNCTIONS
 - USE AYSNC/AWAIT
 - DO NOT MUTATE OR CHANGE OR SORT THE ORIGINAL DATA
+- COPIES OF THE ORIGINAL DATA ARE ALLOWED
 
 1. Show the average age and average grade of all students combined
 2. Show the number of students that are over 60 and the number of students that are under 30 years old
