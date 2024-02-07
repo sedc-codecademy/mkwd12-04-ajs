@@ -129,5 +129,55 @@ console.log(bobsInfo);
 console.log("");
 console.log("============== Exploring the object ==============")
 
+let barnie = {
+    name: "Barnie",
+    age: 1,
+    bark: function () {
+        console.log("Aw aw aw !");
+    }
+}
+
+// *** keys ***
+// => returns all the property and method names of our object in an array
+let barniesKeys = Object.keys(barnie);
+console.log(barniesKeys);
+
+// *** values ***
+// => returns all values from our properties and methods ( the whole functions ) in an array
+let barniesValues = Object.values(barnie);
+console.log(barniesValues);
+
+// *** entries ***
+// => returns an array of arrays that have a key and value pair
+let barniesEntries = Object.entries(barnie)
+console.log(barniesEntries);
 
 
+
+console.log("");
+console.log("============== Changing the object accessibility ==============")
+
+// *** freeze ***
+// => completely lock our object for any modifications
+// => adding new properties/methods is not allowed
+// => changing the values of existing is also not allowed
+
+console.log(barnie);
+Object.freeze(barnie);
+barnie.name = "Chapo";
+console.log(barnie.name);
+barnie.isHappy = true;
+console.log(barnie);
+
+// *** seal ***
+// => can't add new properties or methods
+// => can change the existing ones
+
+let marley = {
+    name: "Marley",
+    color: "brown"
+}
+Object.seal(marley)
+marley.name = "Bob Marley";
+marley.isHappy = true;
+console.log(marley);
