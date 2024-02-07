@@ -54,7 +54,12 @@ console.log(id, firstName, lastName);
 const { userFirstName, userLastName, age } = userObj;
 console.log(userFirstName, userLastName, age);
 
-// Will come back later on this !!!
+// We must use the same key-names (propery names)
+
+
+
+const { firstName: ourCustomFirstName } = userObj;
+
 
 
 // => take address latitude and longitute (WITHOUT DESCTRUCTURING)
@@ -93,5 +98,108 @@ function getUserFullName({ firstName, lastName }) {
 let terryFullName = getUserFullName(userObj);
 console.log(terryFullName);
 
+
+console.clear();
+console.log("");
+console.log("=============== Array destructuring ===============")
+
+const testArray = [100, 300, 5_000, 400, 10_000];
+
+// => take first 3 elements (WITHOUT DEST)
+const firstNum = testArray[0];
+const secondNum = testArray[1];
+const thirdNum = testArray[2];
+console.log(firstNum, secondNum, thirdNum);
+
+// => take first 3 elements (WITH DEST)
+// naming is proizvolno :D
+const [itemOne, itemTwo, itemThree, , itemFive] = testArray;
+console.log(itemOne, itemTwo, itemThree, itemFive);
+// TAKES THEM BY ORDER !!!
+
+// => take 1 and 3 div with class arrayDemo
+const [firstDiv, , thirdDiv] = document.getElementsByClassName("arrayDemo")
+console.log(firstDiv);
+console.log(thirdDiv);
+
+// Destructuring with default values
+const testArrayTwo = ["First string", "Second string", "blablabla"];
+const [firstString, secondString, thirdString = "Third string :)"] = testArrayTwo;
+console.log(firstString);
+console.log(secondString);
+console.log(thirdString);
+
+
+
+console.clear();
+console.log("");
+console.log("=============== Spread operator (...) ===============")
+
+// *** Spread in function calls ***
+console.log(Math.max(123, 23, 434, 1000, 400, 343, 43443, 4343));
+let numbers = [123, 23, 434, 1000, 400];
+console.log(Math.max(numbers)); // NaN
+console.log(Math.max(...numbers));
+console.log(Math.max(123, 23, 434, 1000, 400));
+
+console.log(numbers); // prints the whole array object
+console.log(...numbers); // prints only the values
+
+
+// *** Spread with Arrays ***
+const dogs = ["Bax", "Axe", "Chapo"];
+const cats = ["Zuza", "Missy"];
+
+// const allPets = dogs + cats // :) will get string
+// console.log(allPets);
+
+// => merge 2 arrays into 1 (WITH SPREAD)
+const allPets = [...dogs, ...cats];
+console.log(allPets);
+
+// => create copy of dogs array
+const dogsCopy = [...dogs];
+dogsCopy.push("Neznam") // won't change the original array
+
+
+// *** Spread with Objects ***
+
+// => merge 2 objects into 1 (WITH SPREAD)
+
+const dog = {
+    name: "Aks",
+    breed: "Pug"
+}
+const dogDescription = {
+    group: "Toy",
+    color: "Appricot Fawn",
+    origin: "China"
+}
+const owner = {
+    fullName: "Ilija Mitev"
+}
+
+const dogInfo = { ...dog, ...dogDescription, ...owner, isHappy: true }
+console.log(dogInfo);
+
+
+
+console.clear();
+console.log("");
+console.log("=============== Rest operator (...) ===============")
+
+const students = ["Bob", "Jill", "Jogn", "John", "Steve"];
+
+const [bob, jill, ...ostanatiStudents] = students;
+
+console.log(bob, jill);
+console.log(ostanatiStudents);
+
+function sum(...nums) {
+    return nums.reduce((acc, curr) => acc + curr);
+}
+
+console.log(sum(100, 200, 4000, 500));
+console.log(sum(100, 200, 4000, 500, 2000, 340300));
 
 
