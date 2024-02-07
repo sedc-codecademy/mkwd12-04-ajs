@@ -51,7 +51,7 @@ Develop a Beer Recommendation App, "BrewBuddy", by using everything we've learne
 ### Menu Page
 1. Show all available beers by using **pagination**. Set the default page size to 25 per page and add an option to change this by selecting values from a dropdown:
 
-    <img src="../assets/pageSize.png" width="128"/>
+    <img src="../assets/page-size.png" width="128"/>
 
 2. The user can **filter** beers who have ABV > 6%. Besides this, you should add 2 or more filters for properties of your choice. 
 
