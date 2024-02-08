@@ -1,0 +1,642 @@
+[
+  {
+    "id": "1",
+    "title": "The Real Slim Shady",
+    "artist": "Eminem",
+    "album": "The Marshall Mathers LP",
+    "genre": "Rap",
+    "duration": "4:44",
+    "restricted": "18+",
+    "releaseDate": "2000-05-23"
+  },
+  {
+    "id": "2",
+    "title": "Lose Yourself",
+    "artist": "Eminem",
+    "album": "8 Mile",
+    "genre": "Rap",
+    "duration": "5:20",
+    "restricted": "18+",
+    "releaseDate": "2002-10-28"
+  },
+  {
+    "id": "3",
+    "title": "Stan",
+    "artist": "Eminem",
+    "album": "The Marshall Mathers LP",
+    "genre": "Rap",
+    "duration": "6:44",
+    "restricted": "18+",
+    "releaseDate": "2000-11-21"
+  },
+  {
+    "id": "4",
+    "title": "Without Me",
+    "artist": "Eminem",
+    "album": "The Eminem Show",
+    "genre": "Rap",
+    "duration": "4:50",
+    "restricted": "18+",
+    "releaseDate": "2002-05-14"
+  },
+  {
+    "id": "5",
+    "title": "The Way I Am",
+    "artist": "Eminem",
+    "album": "The Marshall Mathers LP",
+    "genre": "Rap",
+    "duration": "4:50",
+    "restricted": "18+",
+    "releaseDate": "2000-09-07"
+  },
+  {
+    "id": "6",
+    "title": "My Name Is",
+    "artist": "Eminem",
+    "album": "The Slim Shady LP",
+    "genre": "Rap",
+    "duration": "4:28",
+    "restricted": "18+",
+    "releaseDate": "1999-01-25"
+  },
+  {
+    "id": "7",
+    "title": "Mockingbird",
+    "artist": "Eminem",
+    "album": "Encore",
+    "genre": "Rap",
+    "duration": "4:11",
+    "restricted": "18+",
+    "releaseDate": "2005-04-25"
+  },
+  {
+    "id": "8",
+    "title": "Cleanin' Out My Closet",
+    "artist": "Eminem",
+    "album": "The Eminem Show",
+    "genre": "Rap",
+    "duration": "4:57",
+    "restricted": "18+",
+    "releaseDate": "2002-09-17"
+  },
+  {
+    "id": "9",
+    "title": "In Da Club",
+    "artist": "50 Cent",
+    "album": "Get Rich or Die Tryin'",
+    "genre": "Hip Hop",
+    "duration": "3:44",
+    "restricted": "18+",
+    "releaseDate": "2003-01-07"
+  },
+  {
+    "id": "10",
+    "title": "Candy Shop",
+    "artist": "50 Cent",
+    "album": "The Massacre",
+    "genre": "Hip Hop",
+    "duration": "3:29",
+    "restricted": "18+",
+    "releaseDate": "2005-02-15"
+  },
+  {
+    "id": "11",
+    "title": "P.I.M.P.",
+    "artist": "50 Cent",
+    "album": "Get Rich or Die Tryin'",
+    "genre": "Hip Hop",
+    "duration": "4:09",
+    "restricted": "18+",
+    "releaseDate": "2003-08-12"
+  },
+  {
+    "id": "12",
+    "title": "21 Questions",
+    "artist": "50 Cent",
+    "album": "Get Rich or Die Tryin'",
+    "genre": "Hip Hop",
+    "duration": "3:44",
+    "restricted": "18+",
+    "releaseDate": "2003-05-06"
+  },
+  {
+    "id": "13",
+    "title": "Just A Lil Bit",
+    "artist": "50 Cent",
+    "album": "The Massacre",
+    "genre": "Hip Hop",
+    "duration": "3:58",
+    "restricted": "18+",
+    "releaseDate": "2005-05-10"
+  },
+  {
+    "id": "14",
+    "title": "Disco Inferno",
+    "artist": "50 Cent",
+    "album": "The Massacre",
+    "genre": "Hip Hop",
+    "duration": "3:34",
+    "restricted": "18+",
+    "releaseDate": "2005-04-12"
+  },
+  {
+    "id": "15",
+    "title": "Wanksta",
+    "artist": "50 Cent",
+    "album": "Get Rich or Die Tryin'",
+    "genre": "Hip Hop",
+    "duration": "3:39",
+    "restricted": "18+",
+    "releaseDate": "2003-11-06"
+  },
+  {
+    "id": "16",
+    "title": "Candy Shop",
+    "artist": "50 Cent",
+    "album": "The Massacre",
+    "genre": "Hip Hop",
+    "duration": "3:29",
+    "restricted": "18+",
+    "releaseDate": "2005-02-15"
+  },
+  {
+    "id": "17",
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "genre": "Rock",
+    "duration": "5:55",
+    "restricted": "None",
+    "releaseDate": "1975-10-31"
+  },
+  {
+    "id": "18",
+    "title": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "album": "Led Zeppelin IV",
+    "genre": "Rock",
+    "duration": "8:02",
+    "restricted": "None",
+    "releaseDate": "1971-11-08"
+  },
+  {
+    "id": "19",
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "album": "Hotel California",
+    "genre": "Rock",
+    "duration": "6:30",
+    "restricted": "None",
+    "releaseDate": "1977-02-22"
+  },
+  {
+    "id": "20",
+    "title": "Sweet Child O' Mine",
+    "artist": "Guns N' Roses",
+    "album": "Appetite for Destruction",
+    "genre": "Rock",
+    "duration": "5:56",
+    "restricted": "None",
+    "releaseDate": "1987-08-17"
+  },
+  {
+    "id": "21",
+    "title": "Imagine",
+    "artist": "John Lennon",
+    "album": "Imagine",
+    "genre": "Rock",
+    "duration": "3:03",
+    "restricted": "None",
+    "releaseDate": "1971-10-11"
+  },
+  {
+    "id": "22",
+    "title": "Smells Like Teen Spirit",
+    "artist": "Nirvana",
+    "album": "Nevermind",
+    "genre": "Grunge",
+    "duration": "5:01",
+    "restricted": "None",
+    "releaseDate": "1991-09-10"
+  },
+  {
+    "id": "23",
+    "title": "Comfortably Numb",
+    "artist": "Pink Floyd",
+    "album": "The Wall",
+    "genre": "Rock",
+    "duration": "6:22",
+    "restricted": "None",
+    "releaseDate": "1979-11-30"
+  },
+  {
+    "id": "24",
+    "title": "One",
+    "artist": "Metallica",
+    "album": "...And Justice for All",
+    "genre": "Heavy Metal",
+    "duration": "7:27",
+    "restricted": "None",
+    "releaseDate": "1989-08-25"
+  },
+  {
+    "id": "25",
+    "title": "November Rain",
+    "artist": "Guns N' Roses",
+    "album": "Use Your Illusion I",
+    "genre": "Rock",
+    "duration": "8:57",
+    "restricted": "None",
+    "releaseDate": "1991-02-18"
+  },
+  {
+    "id": "26",
+    "title": "The Show Must Go On",
+    "artist": "Queen",
+    "album": "Innuendo",
+    "genre": "Rock",
+    "duration": "4:32",
+    "restricted": "None",
+    "releaseDate": "1991-10-14"
+  },
+  {
+    "id": "27",
+    "title": "Another One Bites the Dust",
+    "artist": "Queen",
+    "album": "The Game",
+    "genre": "Rock",
+    "duration": "3:35",
+    "restricted": "None",
+    "releaseDate": "1980-06-30"
+  },
+  {
+    "id": "28",
+    "title": "One More Time",
+    "artist": "Daft Punk",
+    "album": "Discovery",
+    "genre": "House",
+    "duration": "5:20",
+    "restricted": "None",
+    "releaseDate": "2000-11-30"
+  },
+  {
+    "id": "29",
+    "title": "Yeah!",
+    "artist": "Usher",
+    "album": "Confessions",
+    "genre": "R&B",
+    "duration": "4:10",
+    "restricted": "None",
+    "releaseDate": "2004-01-27"
+  },
+  {
+    "id": "30",
+    "title": "Get Busy",
+    "artist": "Sean Paul",
+    "album": "Dutty Rock",
+    "genre": "Reggae",
+    "duration": "3:31",
+    "restricted": "None",
+    "releaseDate": "2002-09-10"
+  },
+  {
+    "id": "31",
+    "title": "In Da Club",
+    "artist": "50 Cent",
+    "album": "Get Rich or Die Tryin'",
+    "genre": "Hip Hop",
+    "duration": "3:44",
+    "restricted": "18+",
+    "releaseDate": "2003-01-07"
+  },
+  {
+    "id": "32",
+    "title": "Crazy in Love",
+    "artist": "Beyoncé",
+    "album": "Dangerously in Love",
+    "genre": "R&B",
+    "duration": "3:56",
+    "restricted": "None",
+    "releaseDate": "2003-05-18"
+  },
+  {
+    "id": "33",
+    "title": "Hey Ya!",
+    "artist": "OutKast",
+    "album": "Speakerboxxx/The Love Below",
+    "genre": "Hip Hop",
+    "duration": "3:55",
+    "restricted": "None",
+    "releaseDate": "2003-09-09"
+  },
+  {
+    "id": "34",
+    "title": "Hips Don't Lie",
+    "artist": "Shakira",
+    "album": "Oral Fixation, Vol. 2",
+    "genre": "Latin",
+    "duration": "3:38",
+    "restricted": "None",
+    "releaseDate": "2006-02-28"
+  },
+  {
+    "id": "35",
+    "title": "Gold Digger",
+    "artist": "Kanye West",
+    "album": "Late Registration",
+    "genre": "Hip Hop",
+    "duration": "3:28",
+    "restricted": "None",
+    "releaseDate": "2005-07-05"
+  },
+  {
+    "id": "36",
+    "title": "Blowin' in the Wind",
+    "artist": "Bob Dylan",
+    "album": "The Freewheelin' Bob Dylan",
+    "genre": "Folk",
+    "duration": "2:48",
+    "restricted": "None",
+    "releaseDate": "1962-05-09"
+  },
+  {
+    "id": "37",
+    "title": "Molitva",
+    "artist": "Marija Serifovic",
+    "album": "Molitva",
+    "genre": "Pop",
+    "duration": "3:03",
+    "restricted": "None",
+    "releaseDate": "2007-05-12"
+  },
+  {
+    "id": "38",
+    "title": "Fairytale",
+    "artist": "Alexander Rybak",
+    "album": "Fairytale",
+    "genre": "Pop",
+    "duration": "3:04",
+    "restricted": "None",
+    "releaseDate": "2009-05-16"
+  },
+  {
+    "id": "39",
+    "title": "Satellite",
+    "artist": "Lena",
+    "album": "Satellite",
+    "genre": "Pop",
+    "duration": "2:54",
+    "restricted": "None",
+    "releaseDate": "2010-05-29"
+  },
+  {
+    "id": "40",
+    "title": "Running Scared",
+    "artist": "Ell & Nikki",
+    "album": "Running Scared",
+    "genre": "Pop",
+    "duration": "3:00",
+    "restricted": "None",
+    "releaseDate": "2011-05-14"
+  },
+  {
+    "id": "41",
+    "title": "Euphoria",
+    "artist": "Loreen",
+    "album": "Euphoria",
+    "genre": "Pop",
+    "duration": "3:01",
+    "restricted": "None",
+    "releaseDate": "2012-05-26"
+  },
+  {
+    "id": "42",
+    "title": "Only Teardrops",
+    "artist": "Emmelie de Forest",
+    "album": "Only Teardrops",
+    "genre": "Pop",
+    "duration": "3:03",
+    "restricted": "Pop",
+    "releaseDate": "2013-05-18"
+  },
+  {
+    "id": "43",
+    "title": "Heroes",
+    "artist": "Måns Zelmerlöw",
+    "album": "Heroes",
+    "genre": "Swedish",
+    "duration": "3:11",
+    "restricted": "Pop",
+    "releaseDate": "2015-05-23"
+  },
+  {
+    "id": "44",
+    "title": "Molitva za Magdalenu",
+    "artist": "Oliver Dragojević",
+    "album": "Molitva za Magdalenu",
+    "genre": "Croatian",
+    "duration": "4:20",
+    "restricted": "Pop",
+    "releaseDate": "1997-01-01"
+  },
+  {
+    "id": "45",
+    "title": "Pismo moja",
+    "artist": "Hari Mata Hari",
+    "album": "Ja nemam nikoga",
+    "genre": "Bosnian",
+    "duration": "4:00",
+    "restricted": "Folk",
+    "releaseDate": "1985-01-01"
+  },
+  {
+    "id": "46",
+    "title": "Lane moje",
+    "artist": "Željko Joksimović",
+    "album": "Lane moje",
+    "genre": "Serbian",
+    "duration": "3:02",
+    "restricted": "Folk",
+    "releaseDate": "2004-05-15"
+  },
+  {
+    "id": "47",
+    "title": "Lejla",
+    "artist": "Hari Mata Hari",
+    "album": "Lejla",
+    "genre": "Bosnian",
+    "duration": "3:03",
+    "restricted": "Folk",
+    "releaseDate": "2006-05-20"
+  },
+  {
+    "id": "48",
+    "title": "Nije ljubav stvar",
+    "artist": "Željko Joksimović",
+    "album": "Nije ljubav stvar",
+    "genre": "Pop",
+    "duration": "3:03",
+    "restricted": "None",
+    "releaseDate": "2012-05-26"
+  },
+  {
+    "id": "49",
+    "title": "Master Of Puppets",
+    "artist": "Metallica",
+    "album": "Master Of Puppets",
+    "genre": "Metal",
+    "duration": "8:36",
+    "restricted": "None",
+    "releaseDate": "1986-03-03"
+  },
+  {
+    "id": "50",
+    "title": "Super Freak",
+    "artist": "Rick James",
+    "album": "Street Songs",
+    "genre": "Funk",
+    "duration": "3:25",
+    "restricted": "None",
+    "releaseDate": "1981-07-10"
+  },
+  {
+    "id": "51",
+    "title": "I Want You Back",
+    "artist": "The Jackson 5",
+    "album": "Diana Ross Presents The Jackson 5",
+    "genre": "Pop",
+    "duration": "3:00",
+    "restricted": "None",
+    "releaseDate": "1969-10-07"
+  },
+  {
+    "id": "52",
+    "title": "I Will Survive",
+    "artist": "Gloria Gaynor",
+    "album": "Love Tracks",
+    "genre": "Disco",
+    "duration": "3:18",
+    "restricted": "None",
+    "releaseDate": "1978-10-23"
+  },
+  {
+    "id": "53",
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "album": "Thriller",
+    "genre": "Pop",
+    "duration": "4:54",
+    "restricted": "None",
+    "releaseDate": "1983-01-02"
+  },
+  {
+    "id": "54",
+    "title": "I'm Coming Out",
+    "artist": "Diana Ross",
+    "album": "Diana",
+    "genre": "Disco",
+    "duration": "5:22",
+    "restricted": "None",
+    "releaseDate": "1980-05-22"
+  },
+  {
+    "id": "55",
+    "title": "I Feel Love",
+    "artist": "Donna Summer",
+    "album": "I Remember Yesterday",
+    "genre": "Disco",
+    "duration": "5:53",
+    "restricted": "None",
+    "releaseDate": "1977-05-13"
+  },
+  {
+    "id": "56",
+    "title": "Le Freak",
+    "artist": "Chic",
+    "album": "C'est Chic",
+    "genre": "Disco",
+    "duration": "5:23",
+    "restricted": "None",
+    "releaseDate": "1978-09-21"
+  },
+  {
+    "id": "57",
+    "title": "Stayin' Alive",
+    "artist": "Bee Gees",
+    "album": "Saturday Night Fever",
+    "genre": "Disco",
+    "duration": "4:45",
+    "restricted": "None",
+    "releaseDate": "1977-12-12"
+  },
+  {
+    "id": "58",
+    "title": "Take Five",
+    "artist": "Dave Brubeck",
+    "album": "Time Out",
+    "genre": "Jazz",
+    "duration": "5:24",
+    "restricted": "None",
+    "releaseDate": "1959-09-14"
+  },
+  {
+    "id": "59",
+    "title": "So What",
+    "artist": "Miles Davis",
+    "album": "Kind of Blue",
+    "genre": "Jazz",
+    "duration": "9:22",
+    "restricted": "None",
+    "releaseDate": "1959-08-17"
+  },
+  {
+    "id": "60",
+    "title": "Take the 'A' Train",
+    "artist": "Duke Ellington",
+    "album": "Never No Lament: The Blanton-Webster Band",
+    "genre": "Jazz",
+    "duration": "2:54",
+    "restricted": "None",
+    "releaseDate": "1941-01-01"
+  },
+  {
+    "id": "61",
+    "title": "Sing, Sing, Sing",
+    "artist": "Benny Goodman",
+    "album": "The Benny Goodman Story",
+    "genre": "Jazz",
+    "duration": "8:43",
+    "restricted": "None",
+    "releaseDate": "1936-01-01"
+  },
+  {
+    "id": "62",
+    "title": "A Night in Tunisia",
+    "artist": "Dizzy Gillespie",
+    "album": "A Night in Tunisia",
+    "genre": "Jazz",
+    "duration": "3:06",
+    "restricted": "None",
+    "releaseDate": "1946-01-01"
+  },
+  {
+    "id": "63",
+    "title": "Take Five",
+    "artist": "Dave Brubeck",
+    "album": "Time Out",
+    "genre": "Jazz",
+    "duration": "5:24",
+    "restricted": "None",
+    "releaseDate": "1959-09-14"
+  },
+  {
+    "id": "64",
+    "title": "So What",
+    "artist": "Miles Davis",
+    "album": "Kind of Blue",
+    "genre": "Jazz",
+    "duration": "9:22",
+    "restricted": "None",
+    "releaseDate": "1959-08-17"
+  }
+]
