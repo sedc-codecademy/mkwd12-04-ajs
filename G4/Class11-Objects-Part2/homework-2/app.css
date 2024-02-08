@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+
+.student-info {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+
+.student-info h4 {
+  margin: 0;
+}
+
+.student-info p:last-child {
+  margin-bottom: 0;
+}

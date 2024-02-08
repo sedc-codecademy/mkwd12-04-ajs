@@ -2,7 +2,7 @@
 
 ## Requirements
 
-Using only async/await syntax fetch the students from this endpoing "https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json"
+Using only async/await syntax fetch the students from this endpoint "https://raw.githubusercontent.com/sedc-codecademy/skwd9-04-ajs/main/Samples/students_v2.json"
 
 After you have the data display the following informations in the HTML
 
