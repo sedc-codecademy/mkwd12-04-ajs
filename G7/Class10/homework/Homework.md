@@ -7,7 +7,7 @@ Academy
 * Subjects - array of Subjects
 * Start - Date when it starts
 * End - Date when it ends
-* NumberOfClasses - number of subjects * 10, not settable
+* NumberOfClasses - number of subjects * 10
 * PrintStudents - method that prints all students in console
 * PrintSubjects - method that prints all subjects in console
 
