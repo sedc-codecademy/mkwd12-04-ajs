@@ -153,7 +153,7 @@ console.log(dog.dogColor); //Black
 console.log(dog.dogAge); //4
 
 //If we use destructuring on our object it will look like:
-const {dogName, dogColor, dogAge} = dog;
+const {name, color, age} = dog;
 console.log(name); //Bugsy
 console.log(color); //Black
 console.log(age); //4
@@ -216,7 +216,6 @@ function displaySummary(student) {
 displaySummary(student)
 ```
 
-From the comparison, we can see that the function declaration with destructuring is more clear, and simple
 
 ### Default Values
 
@@ -418,6 +417,7 @@ console.log(Object.isSealed(dog)); // true
 console.log(Object.isSealed(barnie)); // true
 console.log(Object.isFrozen(dog)); // false
 ```
+
 
 ## Extra materials 📘
 * [Introduction and using objects](https://codetheweb.blog/2018/06/09/javascript-objects/)

@@ -153,7 +153,7 @@ console.log(dog.dogColor); //Black
 console.log(dog.dogAge); //4
 
 //If we use destructuring on our object it will look like:
-const {dogName, dogColor, dogAge} = dog;
+const {name, color, age} = dog;
 console.log(name); //Bugsy
 console.log(color); //Black
 console.log(age); //4

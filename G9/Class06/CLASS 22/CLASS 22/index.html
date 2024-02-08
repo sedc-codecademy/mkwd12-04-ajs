@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <img style="width: 500px; height: 350px; margin-left: 33%" src="img/logo.png" alt="StarWars" />
+  <div>
+    <img id="cosmonaut" style="
+          width: 15%;
+          height: 15%;
+          display: inline-block;
+          margin-left: 33%;
+          padding-right: 5%;
+        " src="img/cosmonaut.svg" />
+
+    <img id="rocket" style="width: 15%; height: 15%; display: inline-block" src="img/rocket.svg" />
+  </div>
+  <div id="spinner" class="loader"></div>
+    <table id="peopleTable" style="color: rgb(2, 3, 4); background-color: aqua; display: none;">
+      <thead>
+        <th>Name</th>
+        <th>Height</th>
+        <th>Mass</th>
+        <th>Birth Year</th>
+        <th>Films</th>
+      <tbody id="peopleTableBody">
+
+      </tbody>
+      </thead>
+    </table>
+    <table id="shipTable" style="color: rgb(2, 3, 4); background-color: rgb(255, 0, 0); display: none;">
+      <thead>
+        <th>Name</th>
+        <th>Model</th>
+        <th>Capacity</th>
+        <th>Manufacturer</th>
+        <th>Class</th>
+      <tbody id="shipTableBody">
+
+      </tbody>
+      </thead>
+    </table>
+  <script src="script.js"></script>
+</body>
+
+</html>
