@@ -54,12 +54,11 @@ console.log(id, firstName, lastName);
 const { userFirstName, userLastName, age } = userObj;
 console.log(userFirstName, userLastName, age);
 
-// We must use the same key-names (propery names)
+// We must use the same key-names (propery names) !
 
-
-
+// *However, there is workaround syntax even for that* 
+// Syntax: { propertyName : ourCustomVariableName } = ourObject
 const { firstName: ourCustomFirstName } = userObj;
-
 
 
 // => take address latitude and longitute (WITHOUT DESCTRUCTURING)
