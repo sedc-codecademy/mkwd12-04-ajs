@@ -1,0 +1,53 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.small {
+    height: 30vh;
+}
+
+.imgBtn {
+    cursor: pointer;
+}
+
+.medium {
+    height: 40vh;
+}
+
+.yellow {
+    color: yellow;
+    font-weight: 700;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.white {
+    color: white;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#result {
+    padding: 5%;
+}
+
+#loader {
+    display: none;
+    height: 10vh;
+}
+
+#nextBtn,
+#prevBtn {
+    display: none;
+}
+
+#starWarsLogo {
+    margin-top: 5%;
+}
