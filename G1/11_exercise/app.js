@@ -13,12 +13,36 @@ const app = {
 	songs: [],
 	songsInPlaylist: [],
 
+	generateGenreOptions: function () {
+		const genres = this.songs.map(song => song.genre);
+		let uniqueGenres = [];
+
+		// uniqueGenres = [...new Set(genres)] // for the future
+		genres.forEach(genre => {
+			if (!uniqueGenres.includes(genre)) {
+				uniqueGenres.push(genre);
+			}
+		});
+
+		this.html.genre.innerHTML =
+			'<option selected value="">Select genre</option>';
+
+		uniqueGenres.forEach(genre => {
+			const option = document.createElement('option');
+			option.value = genre;
+			option.innerText = genre;
+			this.html.genre.appendChild(option);
+		});
+	},
+
 	search: function () {
-		const searchValue = this.html.search.value; // aa Aa
+		const searchValue = this.html.search.value;
 		const genreValue = this.html.genre.value;
 		const isRestricted = this.html.restricted.checked;
 
-		let filteredSongs = [...this.songs];
+		let filteredSongs = this.songs.filter(
+			song => !this.songsInPlaylist.find(sp => sp.id === song.id)
+		);
 
 		if (searchValue) {
 			filteredSongs = filteredSongs.filter(
@@ -37,17 +61,17 @@ const app = {
 			filteredSongs = filteredSongs.filter(song => song.restricted === 'None');
 		}
 
-		this.renderMusic(filteredSongs);
+		this.renderMusic(filteredSongs, false);
 	},
 
 	showPage: function (page) {
 		if (page === 'music') {
 			this.html.searchSection.style.display = 'block';
-			this.renderMusic(this.songs);
+			this.renderMusic(this.songs, false);
 		} else {
 			// if it's playlist
 			this.html.searchSection.style.display = 'none';
-			this.renderMusic(this.songsInPlaylist);
+			this.renderMusic(this.songsInPlaylist, true);
 		}
 	},
 
@@ -66,7 +90,7 @@ const app = {
 		}
 	},
 
-	renderMusic: function (songs) {
+	renderMusic: function (songs, isPlaylist) {
 		this.html.tableBody.innerHTML = '';
 
 		songs.forEach((song, index) => {
@@ -81,17 +105,42 @@ const app = {
 						<td>${song.restricted}</td>
 						<td>${song.releaseDate}</td>
 						<td>
-							<button id="add-btn-${song.id}" class="btn btn-primary">Add to playlist</button>
+              ${
+								isPlaylist
+									? `<button id="remove-btn-${song.id}" class="btn btn-danger">Remove from playlist</button>`
+									: `<button id="add-btn-${song.id}" class="btn btn-primary">Add to playlist</button>`
+							}
 						</td>
       </tr>
       `;
 		});
 
-		this.attachAddToPlaylistEventListener();
+		// if (isPlaylist) {
+		// 	this.attachRemoveFromPlaylistEventListener(songs);
+		// } else {
+		// 	this.attachAddToPlaylistEventListener(songs);
+		// }
+
+		isPlaylist
+			? this.attachRemoveFromPlaylistEventListener(songs)
+			: this.attachAddToPlaylistEventListener(songs);
 	},
 
-	attachAddToPlaylistEventListener: function () {
-		this.songs.forEach(song => {
+	attachRemoveFromPlaylistEventListener: function (songs) {
+		songs.forEach(song => {
+			const button = document.querySelector(`#remove-btn-${song.id}`);
+			button.addEventListener('click', this.removeFromPlaylist.bind(this));
+		});
+	},
+
+	removeFromPlaylist: function (event) {
+		const id = event.target.id.split('-')[2];
+		this.songsInPlaylist = this.songsInPlaylist.filter(song => song.id !== id);
+		this.renderMusic(this.songsInPlaylist, true);
+	},
+
+	attachAddToPlaylistEventListener: function (songs) {
+		songs.forEach(song => {
 			const button = document.querySelector(`#add-btn-${song.id}`);
 			button.addEventListener('click', this.addToPlaylist.bind(this));
 		});
@@ -101,8 +150,7 @@ const app = {
 		const id = event.target.id.split('-')[2];
 		const song = this.songs.find(s => s.id === id);
 		this.songsInPlaylist.push(song);
-		const filteredSongs = this.songs.filter(s => s.id !== id);
-		// this.renderMusic(filteredSongs);
+		this.search();
 	},
 
 	init: async function () {
@@ -119,7 +167,8 @@ const app = {
 		this.html.restricted.addEventListener('input', this.search.bind(this));
 
 		await this.getSongs();
-		this.renderMusic(this.songs);
+		this.renderMusic(this.songs, false);
+		this.generateGenreOptions();
 	},
 };
 
