@@ -1,0 +1,39 @@
+main {
+    padding: 10px;
+}
+
+#search-section > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        max-width: 400px;
+
+        input {
+            max-width: 400px;
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        &:last-child {
+            max-width: 200px;
+            margin-left: 10px;
+        }
+    }
+
+    select {
+        max-width: 300px;
+    }
+}
+
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
