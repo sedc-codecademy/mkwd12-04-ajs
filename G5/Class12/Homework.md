@@ -33,7 +33,3 @@ Make the functions AddLibrary, RemoveLibrary and StartBook dynamic.
 ## Task 3
 Add a method AddBook to Library. This method should accept a book and use the Object.create method, to create an object
 with the same properties as the parameter and then add it to the Books array.
-
-### Contact
-#### stojanovskatanja@hotmail.com
-#### bojandamcevski@yahoo.com
