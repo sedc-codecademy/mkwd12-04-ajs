@@ -21,12 +21,12 @@ function Person(name) {
 Person.lastName = 'Stankovska';
 const me = new Person('Aneta');
 me.age = 32;
-const you = new Person('Ile');
+const you = new Person('Ile'); // ile does not posses the age property
 
 // console.log(Person);
-// console.log(Person.prototype);
-// console.log(you.__proto__);
-// console.log(me.__proto__);
+// console.log(Person.prototype); // we cannot call __proto__ on a constructor function
+// console.log(you.__proto__); // __proto__ is a reference to the prototype of the constructor that created that object
+// console.log(me.__proto__); // __proto__ is a reference to the prototype of the constructor that created that object
 // console.log(Person.prototype === Person.__proto__) // false
 // console.log(Person.prototype === me.__proto__) // true
 
@@ -63,8 +63,7 @@ const car = {
     model: 'Camry'
 }
 
-// Assing vehicle as a prototype of car
-// Bad way - do not use it
+// Assign vehicle as a prototype of car
 // car.__proto__ = vehicle;
 // car.start();
 
@@ -95,9 +94,10 @@ function Pet(name, sound) {
 }
 
 // Pet.speak = function() {
-//     console.log(`The pet says ${this.sound}`);
+//     console.log(`The pet says ${this.sound}`); // Result: The pet says ubdefined
 // }
 
+// Adding methods to constructor function should be by using prototypes, otherwise the method will not be added properly
 Pet.prototype.speak = function() {
     console.log(`The pet says ${this.sound}`);
 }
