@@ -6,10 +6,10 @@ Create a function that render information about a movie, destructure the movie o
 
 ```
 const movie = {
-    title: "Saving Private Ryan"
+    title: "Saving Private Ryan",
     director: "Steven Spielberg",
-    country: "USA"
-    year: 1999
+    country: "USA",
+    year: 1999,
     productionInfo: {
         budget: "70 million",
         producer: "Ian Bryce",
