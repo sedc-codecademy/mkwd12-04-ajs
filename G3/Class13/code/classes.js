@@ -152,7 +152,7 @@ class ElectricCar extends Car {
         if (ownerValue.length <= 2) {
             throw new Error("Invalid name!!! Value " + ownerValue)
         }
-        console.log(`Hello from owner SETTER! Value: ${ownerValue} is not a name`);
+        console.log(`Hello from owner SETTER! Value: ${ownerValue}`);
         this._owner = ownerValue;
     }
 
