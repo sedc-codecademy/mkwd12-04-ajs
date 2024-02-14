@@ -96,3 +96,5 @@ The web page should be:
 8. The person wants to see who made this app
 9. Clicks on the About link
 10. Immediately the view changes to the about the view ( without loading the app again )
+
+API EXAMPLE KEY: 74e59f6374abe0d9b758877616ae444c
