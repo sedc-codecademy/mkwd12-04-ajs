@@ -4,10 +4,11 @@ import { Todo } from "./src/todo.model.js";
 const app = () => {
   //Data variables
   let todos = [
-    new Todo("Read a book", "low"),
-    new Todo("Workout", "medium"),
-    new Todo("Study Js", "high"),
+    new Todo("Edit Me", "high"),
+    new Todo("Do Dishes", "low"),
+    new Todo("Edit me as well", "high"),
   ];
+  let editTodoId = "";
 
   //Selectors
   const todoListEl = document.querySelector(".todo-list");
@@ -44,10 +45,19 @@ const app = () => {
     });
   };
 
+  const onEditTodo = todo => {
+    todoTextInputEl.value = todo.text;
+    todoPriorityInputEl.value = todo.priority;
+    submitBtnEl.innerText = "Update";
+    editTodoId = todo.id;
+  };
+
   const addTodoEventListener = (todo, todoEl) => {
     todoEl.addEventListener("click", event => {
       if (event.target.id.includes("edit")) {
         console.log("edit btn clicked");
+        //Set the value of the inputs to the clicked todo
+        onEditTodo(todo);
       }
 
       if (event.target.id.includes("delete")) {
@@ -73,15 +83,30 @@ const app = () => {
     //Get values from inputs
     const todoTextInputValue = todoTextInputEl.value;
     const todoPriorityInputValue = todoPriorityInputEl.value;
-    //Create new todo object
-    const newTodo = new Todo(todoTextInputValue, todoPriorityInputValue);
-    //Add todo to todos array
-    todos.push(newTodo);
+
+    if (!editTodoId) {
+      //Create new todo object
+      const newTodo = new Todo(todoTextInputValue, todoPriorityInputValue);
+      //Add todo to todos array
+      todos.push(newTodo);
+    }
+
+    if (editTodoId) {
+      todos.forEach(todo => {
+        if (todo.id === editTodoId) {
+          todo.updateTodo(todoTextInputValue, todoPriorityInputValue);
+        }
+      });
+      editTodoId = "";
+      submitBtnEl.innerText = "Add";
+    }
+
     //Call renderTodos()
     todoFormEl.reset();
     renderTodos(todos, todoListEl);
   });
 
+  //   We called this first to render out the mock data that was in todos
   renderTodos(todos, todoListEl);
 };
 

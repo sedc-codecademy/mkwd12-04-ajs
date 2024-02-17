@@ -21,7 +21,7 @@ CountrySearch is an application that is meant to search for countries and get da
 
 ### Extra requirements
 
-- List language names and currency names in the table as well ( only names and divided by, EX: Spanish, English )
+- List language names and currency names in the cards as well ( only names and divided by, EX: Spanish, English )
 - Add loading image (or spinner) while it is getting the data
 - Add a filter by name, area, and population in descending order
 - Add a filter by name, area, and population in ascending order

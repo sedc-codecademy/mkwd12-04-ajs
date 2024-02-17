@@ -5,7 +5,6 @@ export class Todo {
   constructor(text, priority) {
     this.text = text;
     this.priority = priority;
-    this.isFinished = false;
   }
 
   finishTodo() {
