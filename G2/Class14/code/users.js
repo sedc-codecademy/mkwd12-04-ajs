@@ -7,7 +7,7 @@ export const users = [
       firstName: 'Bob',
       lastName: 'Bobsky',
       age: 30,
-      role: 'admin',
+      role: 'user',
     },
     {
       email: 'user1@example.com',
@@ -16,7 +16,7 @@ export const users = [
       firstName: 'John',
       lastName: 'Doe',
       age: 25,
-      role: 'user',
+      role: 'admin',
     },
     {
       email: 'user2@example.com',
@@ -25,7 +25,7 @@ export const users = [
       firstName: 'Jane',
       lastName: 'Smith',
       age: 28,
-      role: 'user',
+      role: 'admin',
     },
     {
       email: 'user3@example.com',
