@@ -27,3 +27,9 @@ class Student implements Person {
 const ivo = new Student('Ivo', 'Kostovski', Track.JS);
 console.log(ivo);
 console.log(ivo.getFullName());
+
+// To compile TS code to JS
+// npx tsc
+
+// To run JS code in terminal
+// node ./dist/index.js
