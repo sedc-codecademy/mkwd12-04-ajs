@@ -1,0 +1,87 @@
+
+    [
+        {
+            "email": "admin@example.com",
+            "username": "admin",
+            "password": "admin123",
+            "firstName": "Bob",
+            "lastName": "Bobsky",
+            "age": 30,
+            "role": "user"
+        },
+        {
+            "email": "user1@example.com",
+            "username": "user1",
+            "password": "user123",
+            "firstName": "John",
+            "lastName": "Doe",
+            "age": 25,
+            "role": "admin"
+        },
+        {
+            "email": "user2@example.com",
+            "username": "user2",
+            "password": "user456",
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "age": 28,
+            "role": "admin"
+        },
+        {
+            "email": "user3@example.com",
+            "username": "user3",
+            "password": "pass789",
+            "firstName": "Alice",
+            "lastName": "Johnson",
+            "age": 22,
+            "role": "user"
+        },
+        {
+            "email": "user4@example.com",
+            "username": "user4",
+            "password": "password123",
+            "firstName": "Bob",
+            "lastName": "Miller",
+            "age": 35,
+            "role": "user"
+        },
+        {
+            "email": "user5@example.com",
+            "username": "user5",
+            "password": "pass567",
+            "firstName": "Eva",
+            "lastName": "Brown",
+            "age": 30,
+            "role": "user"
+        },
+        {
+            "email": "user6@example.com",
+            "username": "user6",
+            "password": "secret789",
+            "firstName": "Chris",
+            "lastName": "Taylor",
+            "age": 27,
+            "role": "user"
+        },
+        {
+            "email": "user7@example.com",
+            "username": "user7",
+            "password": "userpass123",
+            "firstName": "Sara",
+            "lastName": "Clark",
+            "age": 32,
+            "role": "user"
+        },
+        {
+            "email": "user8@example.com",
+            "username": "user8",
+            "password": "passuser456",
+            "firstName": "Mike",
+            "lastName": "Johnson",
+            "age": 29,
+            "role": "user"
+        }
+    ]    
+  
+
+  
