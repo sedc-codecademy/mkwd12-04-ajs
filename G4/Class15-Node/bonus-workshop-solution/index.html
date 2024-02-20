@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Country Search</h1>
+    </header>
+    <main>
+      <section class="form-container">
+        <div class="form-control search-form">
+          <input type="text" id="searchInput" placeholder="search..." />
+          <button id="searchBtn">Search</button>
+        </div>
+      </section>
+      <section class="form-container">
+        <div class="form-control">
+          <label for="filterInput">Filter by:</label>
+          <select id="filterInput">
+            <option value="name">Name</option>
+            <option value="population">Population</option>
+            <option value="area">Area</option>
+          </select>
+        </div>
+        <div class="form-control">
+          <label for="sortInput">Sort by:</label>
+          <select id="sortInput">
+            <option value="asc">Ascending</option>
+            <option value="dsc">Descending</option>
+          </select>
+        </div>
+        <button id="filterBtn">Filter</button>
+      </section>
+      <section class="cards-container">
+        <h2>Please search to show results</h2>
+      </section>
+      <section class="spinner-container hide">
+        <div class="pin"></div>
+        <div class="pulse"></div>
+      </section>
+    </main>
+  </body>
+</html>
