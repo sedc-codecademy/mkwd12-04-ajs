@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: #e9ecef;
+    padding: 20px 0;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button.primary {
+    background-color: #007bff;
+}
+
+.button.secondary {
+    background-color: #6c757d;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    border-bottom: 16px solid #92cbf8; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-right: 16px solid #3498db; /* Blue */
+    border-left: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.space-below {
+    margin-bottom: 20px;
+}
+
+.three-columns > * {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: 0 0 calc(33.3333% - 20px);
+    margin-bottom: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.info-image {
+    width: 100%;
+    height: auto;
+}
+
+.info-body {
+    padding: 10px 0;
+}
+
+.info-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 1em;
+    color: #333;
+}
+
+.info-footer {
+    font-size: 0.875em;
+    color: #6c757d;
+}
+
+#spiner {
+    margin: 100px auto auto auto;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+}
